@@ -22,3 +22,18 @@
 문제의 설명에 따라 Equilateral, Isosceles, Scalene, Error 중 하나를 출력한다.
 
 """
+
+angle1 = int(input())
+angle2 = int(input())
+angle3 = int(input())
+
+sum_of_angle = angle1 + angle2 + angle3
+
+if angle1 == angle2 == angle3 == 60:
+    print("Equilateral")
+elif sum_of_angle == 180 and angle1 == angle2 or angle1 == angle3 or angle2 == angle3:
+    print("Isosceles")
+elif sum_of_angle == 180 and angle1 != angle2 != angle3:
+    print("Scalene")
+elif sum_of_angle != 180:
+    print("Error")

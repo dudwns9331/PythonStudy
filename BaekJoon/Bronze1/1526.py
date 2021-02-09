@@ -15,3 +15,19 @@ N이 주어졌을 때, N보다 작거나 같은 금민수 중 가장 큰 것을 
 첫째 줄에 N보다 작거나 같은 금민수 중 가장 큰 것을 출력한다.
 
 """
+
+n = int(input())
+
+result_list = list()
+
+for i in range(4, n + 1):
+    is_ok = True
+    result = str(i)
+    for j in range(len(result)):
+        if result[j] != '4' and result[j] != '7':
+            is_ok = False
+            break
+    if is_ok:
+        result_list.append(result)
+
+print(result_list[-1])

@@ -20,4 +20,14 @@ aabbbccb는 b가 떨어져서 나타나기 때문에 그룹 단어가 아니다.
 
 리스트, 문자열 공부하고 다시 풀자!
 
+블로그 참조. 숏코딩 -> word.find로 찾은 문자열을 앞으로 당겨서 정렬한다.
+정렬된게 나왔던 문자면 원래의 문자열과 다르기 때문에 그룹단어가 아니다.
+
 """
+
+result = 0
+for i in range(int(input())):
+    word = input()
+    if list(word) == sorted(word, key=word.find):
+        result += 1
+print(result)

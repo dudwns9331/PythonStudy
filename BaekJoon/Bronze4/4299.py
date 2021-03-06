@@ -16,9 +16,10 @@
 
 """
 
-a, b = map(int, input().split())
-
-if a == 0 or b == 0 or abs(a - b) == 0:
+x, y = map(int, input().strip().split())
+if x - y < 0 or (x - y) % 2 != 0:
     print(-1)
 else:
-    print((a + b) // 2, (a - b) // 2)
+    b = (x - y) // 2
+    a = x - b
+    print(max(b, a), min(a, b))

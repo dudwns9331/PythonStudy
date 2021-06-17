@@ -7,6 +7,8 @@
 문제 : https://www.acmicpc.net/problem/1012
 """
 
+# 문제 다시 보기
+
 t = int(input())
 dx = [1, -1, 0, 0]
 dy = [0, 0, -1, 1]

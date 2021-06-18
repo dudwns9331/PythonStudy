@@ -34,4 +34,3 @@ while len(result) != N:
     count += 1
 
 print(result[-1])
-# asdfasdf
